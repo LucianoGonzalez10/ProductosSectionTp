@@ -12,7 +12,6 @@ import { ProductoService } from '../../service/producto.service';
   styleUrl: './add-productos.component.css'
 })
 export class AddProductosComponent {
-  @Output()
   emitirProducto : EventEmitter<Producto> = new EventEmitter();
 
   fb = inject(FormBuilder);
